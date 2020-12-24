@@ -1,0 +1,70 @@
+---
+styles:
+  - /css/type.css
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+  {% if page.title %}
+  <title>UoB Computer Science Society - {{ page.title }}</title>
+  {% else %}
+  <title>UoB Computer Science Society</title>
+  {% endif %}
+
+  <meta name="description" content="{{site.description}}">
+
+  <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+  <meta name=viewport content="width=device-width, initial-scale=1">
+
+  <script src="{{ '/js/hamburger.js' | relative_url }}"></script>
+
+  <link rel="stylesheet" href="{{ '/css/normalize.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}">
+
+  {% if page.styles %}
+  {% for style in page.styles %}
+  <link rel="stylesheet" href="{{ style | relative_url }}">
+  {% endfor %}
+  {% endif %}
+
+  {% if page.scripts %}
+  {% for script in page.scripts %}
+  <script src="{{ script | relative_url }}"></script>
+  {% endfor %}
+  {% endif %}
+
+  {% seo %}
+</head>
+<body>
+
+  <main>
+    <div class="lead">
+        <div class=ascii-container>
+          <pre class=ascii>
+            <abbr title=CSS role=presentation aria-label=CSS>
+      <span class="delay d1">   <i aria-hidden=true c=_>_</i><i aria-hidden=true c="=">=</i><i aria-hidden=true c=[>[</i><i aria-hidden=true c=]>]</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c={>{</i><i aria-hidden=true c=}>}</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c={>{</i><i aria-hidden=true c=}>}</i><i aria-hidden=true c=[>[</i>        <i aria-hidden=true c={>{</i><i aria-hidden=true c=}>}</i><i aria-hidden=true c=]>]</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=!>!</i><i aria-hidden=true c=[>[</i><i aria-hidden=true c=]>]</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=!>!</i><i aria-hidden=true c=!>!</i><i aria-hidden=true c=[>[</i>        <i aria-hidden=true c=]>]</i><i aria-hidden=true c=;>;</i><i aria-hidden=true c=$>$</i><i aria-hidden=true c="=">=</i><i aria-hidden=true c=_>_</i><i aria-hidden=true c=[>[</i><i aria-hidden=true c=5>5</i><i aria-hidden=true c=]>]</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=_>_</i><i aria-hidden=true c=[>[</i>   </span>
+      <span class="delay d2">  <i aria-hidden=true c=1>1</i><i aria-hidden=true c=]>]</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=_>_</i><i aria-hidden=true c=[>[</i><i aria-hidden=true c=1>1</i><i aria-hidden=true c=6>6</i><i aria-hidden=true c=]>]</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=_>_</i><i aria-hidden=true c=[>[</i><i aria-hidden=true c=1>1</i><i aria-hidden=true c=+>+</i>      <i aria-hidden=true c=2>2</i><i aria-hidden=true c=6>6</i><i aria-hidden=true c=]>]</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=_>_</i><i aria-hidden=true c=[>[</i><i aria-hidden=true c=6>6</i><i aria-hidden=true c=]>]</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=_>_</i><i aria-hidden=true c=[>[</i><i aria-hidden=true c=1>1</i><i aria-hidden=true c=+>+</i>      <i aria-hidden=true c=2>2</i><i aria-hidden=true c=9>9</i><i aria-hidden=true c=]>]</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=_>_</i><i aria-hidden=true c=[>[</i><i aria-hidden=true c=1>1</i><i aria-hidden=true c=5>5</i><i aria-hidden=true c=]>]</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=_>_</i><i aria-hidden=true c=[>[</i><i aria-hidden=true c=5>5</i>  </span>
+      <span class="delay d3"><i aria-hidden=true c=]>]</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=_>_</i><i aria-hidden=true c=[>[</i><i aria-hidden=true c=6>6</i>       <i aria-hidden=true c=]>]</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=_>_</i><i aria-hidden=true c=[>[</i><i aria-hidden=true c=1>1</i>  <i aria-hidden=true c=]>]</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=_>_</i><i aria-hidden=true c=[>[</i><i aria-hidden=true c=1>1</i>      <i aria-hidden=true c=+>+</i><i aria-hidden=true c=2>2</i><i aria-hidden=true c=9>9</i><i aria-hidden=true c=]>]</i><i aria-hidden=true c=;>;</i><i aria-hidden=true c=(>(</i>  <i aria-hidden=true c=[>[</i><i aria-hidden=true c=]>]</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=[>[</i><i aria-hidden=true c=]>]</i>      <i aria-hidden=true c=)>)</i><i aria-hidden=true c=[>[</i><i aria-hidden=true c=$>$</i><i aria-hidden=true c=]>]</i><i aria-hidden=true c=[>[</i><i aria-hidden=true c=$>$</i></span>
+      <span class="delay d4"><i aria-hidden=true c=]>]</i><i aria-hidden=true c=(>(</i><i aria-hidden=true c=_>_</i><i aria-hidden=true c=[>[</i><i aria-hidden=true c=5>5</i>       <i aria-hidden=true c=+>+</i><i aria-hidden=true c=4>4</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=6>6</i><i aria-hidden=true c=+>+</i>  <i aria-hidden=true c=3>3</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=7>7</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=5>5</i>              <i aria-hidden=true c=]>]</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=_>_</i><i aria-hidden=true c=[>[</i><i aria-hidden=true c=4>4</i>            </span>
+      <span class="delay d5"><i aria-hidden=true c=]>]</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=_>_</i><i aria-hidden=true c=[>[</i><i aria-hidden=true c=6>6</i>               <i aria-hidden=true c=]>]</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=_>_</i><i aria-hidden=true c=[>[</i><i aria-hidden=true c=3>3</i><i aria-hidden=true c=+>+</i>             <i aria-hidden=true c=5>5</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=7>7</i><i aria-hidden=true c=]>]</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=_>_</i>          </span>
+      <span class="delay d6"><i aria-hidden=true c=[>[</i><i aria-hidden=true c=7>7</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=4>4</i><i aria-hidden=true c=+>+</i>                 <i aria-hidden=true c=6>6</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=1>1</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=3>3</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=9>9</i><i aria-hidden=true c=]>]</i><i aria-hidden=true c=+>+</i>          <i aria-hidden=true c=_>_</i><i aria-hidden=true c=[>[</i><i aria-hidden=true c=8>8</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=2>2</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=3>3</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=3>3</i>     </span>
+      <span class="delay d7"><i aria-hidden=true c=]>]</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=_>_</i><i aria-hidden=true c=[>[</i><i aria-hidden=true c=7>7</i>                  <i aria-hidden=true c=]>]</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=_>_</i><i aria-hidden=true c=[>[</i><i aria-hidden=true c=5>5</i><i aria-hidden=true c=]>]</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=_>_</i><i aria-hidden=true c=[>[</i>          <i aria-hidden=true c=1>1</i><i aria-hidden=true c=]>]</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=_>_</i><i aria-hidden=true c=[>[</i><i aria-hidden=true c=4>4</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=4>4</i><i aria-hidden=true c=+>+</i>    </span>
+      <span class="delay d8"><i aria-hidden=true c=4>4</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=4>4</i><i aria-hidden=true c=]>]</i><i aria-hidden=true c=+>+</i>                       <i aria-hidden=true c=_>_</i><i aria-hidden=true c=[>[</i><i aria-hidden=true c=3>3</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=4>4</i><i aria-hidden=true c=+>+</i>             <i aria-hidden=true c=7>7</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=6>6</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=5>5</i><i aria-hidden=true c=+>+</i>  </span>
+      <span class="delay d9"><i aria-hidden=true c=2>2</i><i aria-hidden=true c=]>]</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=_>_</i><i aria-hidden=true c=[>[</i>       <i aria-hidden=true c=1>1</i><i aria-hidden=true c=]>]</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=_>_</i><i aria-hidden=true c=[>[</i>             <i aria-hidden=true c=2>2</i><i aria-hidden=true c=6>6</i><i aria-hidden=true c=]>]</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=_>_</i>              <i aria-hidden=true c=[>[</i><i aria-hidden=true c=4>4</i><i aria-hidden=true c=]>]</i><i aria-hidden=true c=)>)</i><i aria-hidden=true c=(>(</i> </span>
+      <span class="delay d10"><i aria-hidden=true c=)>)</i><i aria-hidden=true c=[>[</i><i aria-hidden=true c=_>_</i><i aria-hidden=true c=[>[</i><i aria-hidden=true c=1>1</i>       <i aria-hidden=true c=+>+</i><i aria-hidden=true c=2>2</i><i aria-hidden=true c=5>5</i><i aria-hidden=true c=]>]</i><i aria-hidden=true c=+>+</i>  <i aria-hidden=true c=_>_</i><i aria-hidden=true c=[>[</i><i aria-hidden=true c=1>1</i><i aria-hidden=true c=]>]</i><i aria-hidden=true c=+>+</i>      <i aria-hidden=true c=(>(</i><i aria-hidden=true c=[>[</i><i aria-hidden=true c=]>]</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=_>_</i>   <i aria-hidden=true c=[>[</i><i aria-hidden=true c=$>$</i><i aria-hidden=true c=]>]</i><i aria-hidden=true c=)>)</i><i aria-hidden=true c=[>[</i>      <i aria-hidden=true c=1>1</i><i aria-hidden=true c=4>4</i><i aria-hidden=true c=]>]</i><i aria-hidden=true c=]>]</i><i aria-hidden=true c=(>(</i> </span>
+      <span class="delay d11">  <i aria-hidden=true c=_>_</i><i aria-hidden=true c=[>[</i><i aria-hidden=true c=5>5</i><i aria-hidden=true c=]>]</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=_>_</i><i aria-hidden=true c=[>[</i><i aria-hidden=true c=4>4</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=7>7</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=6>6</i><i aria-hidden=true c=+>+</i>      <i aria-hidden=true c=3>3</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=5>5</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=2>2</i><i aria-hidden=true c=]>]</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=_>_</i><i aria-hidden=true c=[>[</i><i aria-hidden=true c=1>1</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=2>2</i><i aria-hidden=true c=6>6</i>      <i aria-hidden=true c=]>]</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=_>_</i><i aria-hidden=true c=[>[</i><i aria-hidden=true c=7>7</i><i aria-hidden=true c=]>]</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=_>_</i><i aria-hidden=true c=[>[</i><i aria-hidden=true c=2>2</i><i aria-hidden=true c=5>5</i><i aria-hidden=true c=]>]</i><i aria-hidden=true c=+>+</i>  </span>
+      <span class="delay d12">   <i aria-hidden=true c=_>_</i><i aria-hidden=true c=[>[</i><i aria-hidden=true c=6>6</i><i aria-hidden=true c=]>]</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=_>_</i><i aria-hidden=true c=[>[</i><i aria-hidden=true c=7>7</i><i aria-hidden=true c=]>]</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=[>[</i>        <i aria-hidden=true c=]>]</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=_>_</i><i aria-hidden=true c=[>[</i><i aria-hidden=true c=8>8</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=3>3</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=4>4</i><i aria-hidden=true c=]>]</i>         <i aria-hidden=true c=+>+</i><i aria-hidden=true c=_>_</i><i aria-hidden=true c=[>[</i><i aria-hidden=true c=1>1</i><i aria-hidden=true c=]>]</i><i aria-hidden=true c=+>+</i><i aria-hidden=true c=_>_</i><i aria-hidden=true c=[>[</i><i aria-hidden=true c=2>2</i><i aria-hidden=true c=]>]</i><i aria-hidden=true c=)>)</i>   </span>
+      </abbr>
+      <span>                                                       </span>
+      <span class="delay d13">     <i c=comment itemscope itemtype=http://schema.org/Organization><span aria-hidden=true>/*</span>         <h1 itemprop=name>Computer Science Society</h1>         <span aria-hidden=true>*/</span></i>      </span>
+      <span class="delay d14">     <i c=comment itemscope itemtype=http://schema.org/CollegeOrUniversity><span aria-hidden=true>/*</span>         <h2 itemprop="name">University of Birmingham</h2>         <span aria-hidden=true>*/</span></i>      </span>
+         </pre>
+        </div>
+      </div>
+  </main>
+
+</body>
+</html>
+
+
