@@ -1,0 +1,21 @@
+.snow {
+    display: block;
+    position: absolute;
+    line-height: 10px;
+    color: #ffffff50;
+    animation: fade 3s;
+}
+
+@keyframes fade {
+    0%, 50% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
+
+#blocksnow {
+    background-color: #2f3c6380;
+    padding: 20px;
+}
